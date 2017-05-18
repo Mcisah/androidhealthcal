@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.developers.sugarsinitiative.musk">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainHomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action
+                    android:name="android.intent.MainActivity"
+                    android:screenOrientation="portrait" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main2Activity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.Main2Activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main3Activity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.Main3Activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main4Activity"
+            android:parentActivityName=".Main3Activity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.Main4Activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main5Activity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.Main3Activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main6Activity"
+            android:parentActivityName=".Main5Activity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.Main4Activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Mailer"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.Mailer" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Mailer2"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.Mailer2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Mailer3"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.Mailer3" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

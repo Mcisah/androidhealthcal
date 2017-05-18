@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">MAHCA</string>
+    <string name="bottext"> MAHCA is a medical calculator that gives you easy access to complicated medical formulas, scores, scales and classifications used for the diagnosis
+    of chronic kidney disease.</string>
+    <string name="bottext1">The cockcroft-gault formula is used in the analysis of the predictive performance of renal function for a chronic kidney Disease population with normal serum creatinine levels</string>
+    <string name="bottext2">The MDRD formula does not require a body weight variable because it normalizes GFR for a standard body surface area of 1.73 M2 and has been demonstrated to be useful for chronic kidney
+    disease patients and performs similar in diabetic vs. Non diabetic individuals </string>
+    <string name="bottext3">Dialysis adequacy is the volume of fluid cleared of urea during every single treatment (represented as KT/V). The normal dialysis adequacy ( KT/V ) >= 1.2. Clearance should be done after every 3 months. </string>
+    <string name="button1text">Calculate</string>
+    <string name="hint1" translatable="true">enter value in MG/DL</string>
+    <string name="milminhint" translatable="true">value in ml/min</string>
+    <string name="Creatinine">Creatinine</string>
+    <string name="AGE">Age</string>
+    <string name="WEIGHT">Weight</string>
+    <string name="SEX">Sex</string>
+    <string name="semicolon">:</string>
+    <string name="Serum">Serum Creatinine</string>
+    <string name="years">Yrs</string>
+    <string name="Kilos">Kgs</string>
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+    <string name="k">Clearance</string>
+    <string name="T">Time</string>
+    <string name="V">V</string>
+    <string name="time">Min</string>
+    <string name="milmin">ml/min</string>
+    <string name="mgdl">Mg/dl</string>
+    <string name="gfr">GFR</string>
+    <string name="RacePrompts"> Choose a race</string>
+    <string name="Race">Race</string>
+    <string name="dialade">Dialysis Adequacy</string>
+    <string name="mail">Mail Result</string>
+    <string name="stage">Chronic Kidney Disease</string>
+    <string name="description">Description</string>
+    <string name="description1">Kidney damage with Normal or increased GFR</string>
+    <string name="description2">Kidney damage with Mild decrease in GFR</string>
+    <string name="description3">Moderately lowered GFR</string>
+    <string name="description4">Severely lowered GFR</string>
+    <string name="description5">Kidney failure</string>
+    <string name="headertext">Results To Send</string>
+    <string name="subheadertext">Powered by Google Mail</string>
+    <string name="email">Email:</string>
+    <string name="subject">Subject:</string>
+    <string name="message">Message:</string>
+    <string name="send_mail">SEND MAIL</string>
+    <string name="the_details_of_the_patients_results_will_be_mailed_to_the_inputed_health_care_provider_s_email">The details of the Patients Results will be mailed to the inputed Health Care Provider\'s email</string>
+    <string name="s1">Stage 1</string>
+    <string name="s2">Stage 2</string>
+    <string name="s3">Stage 3</string>
+    <string name="s4">Stage 4</string>
+    <string name="s5">Stage 5</string>
+
+
+    <string-array name="Race">
+        <item>Nigerian</item>
+        <item>African American</item>
+    </string-array>
+
+</resources>

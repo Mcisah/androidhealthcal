@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.developers.sugarsinitiative.musk.Main7Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/Creatinine"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/semicolon"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/textView2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=""
+                android:id="@+id/serumCreatinine"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.45"
+                android:maxLines="1"
+                android:maxLength="10"/>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/mgdl"
+                android:layout_weight="0.10" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/AGE"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/semicolon"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/age"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.45"
+                android:maxLines="1"
+                android:maxLength="10"/>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/years"
+                android:layout_weight="0.10" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/WEIGHT"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/semicolon"
+
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/weight"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.45"
+                android:maxLines="1"
+                android:maxLength="10"/>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_weight="0.10"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/Kilos"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/SEX"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/semicolon"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/gender"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.45"
+            android:maxLines="1"
+            android:maxLength="10"/>
+
+        <TextView
+            android:layout_weight="0.10"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            />
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/Race"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/semicolon"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/race"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.45"
+                android:maxLines="1"
+                android:maxLength="10"/>
+
+            <TextView
+                android:layout_weight="0.10"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text=""
+                android:id="@+id/textView4" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/gfr"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/semicolon"
+
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/Gfr"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.45"
+                android:maxLines="1"
+                android:maxLength="10"/>
+
+            <TextView
+                android:layout_weight="0.10"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="60dp"
+                android:text="@string/milmin"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+
+            <Button
+                android:id="@+id/button"
+                style="@style/Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="start"
+                android:onClick="MailMessage"
+                android:text="@string/mail" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

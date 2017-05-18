@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.developers.sugarsinitiative.musk.Main3Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/serumLabelText"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/Serum"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/serumCreatinine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="#FFFFFF"
+                    android:hint="@string/hint1"
+                    android:inputType="numberDecimal"
+                    android:maxLength="8"
+                    android:padding="5dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/serumLabelText"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@id/ageTextLabel"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/AGE"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/ageTextLabel"
+                    android:background="#FFFFFF"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:padding="5dp"
+                    android:layout_toLeftOf="@id/ageTextLabel2"/>
+
+                <TextView
+                    android:id="@id/ageTextLabel2"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:maxLength="3"
+                    android:text="@string/years"
+                    android:textSize="18sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@id/weightLabelText"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/WEIGHT"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="#FFFFFF"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:padding="5dp"
+                    android:layout_toEndOf="@id/weightLabelText"
+                    android:layout_toRightOf="@id/weightLabelText"
+                    android:layout_toLeftOf="@id/weightLabelText2"
+                    android:layout_toStartOf="@id/weightLabelText2"/>
+
+                <TextView
+                    android:id="@id/weightLabelText2"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:maxLength="3"
+                    android:text="@string/Kilos"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@id/sexLabelText"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/SEX"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/genderRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_toRightOf="@id/sexLabelText"
+                    android:layout_marginLeft="5dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true">
+
+                    <RadioButton
+                        android:id="@+id/maleRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/Male" />
+
+                    <RadioButton
+                        android:id="@+id/femaleRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/Female" />
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/raceSpinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:entries="@array/Race"
+                    android:prompt="@string/RacePrompts"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginBottom="10dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/viewDosage"
+                    style="@style/Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:onClick="calculateValue1"
+                    android:text="@string/button1text" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bottext2" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

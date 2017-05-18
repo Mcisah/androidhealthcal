@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.developers.sugarsinitiative.musk.MainHomeActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/labs" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/viewDosagenote3"
+                    android:layout_width="260dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center_vertical"
+                    android:text="GFR value using Cockcroft-Gault formula" />
+
+
+                <Button
+                    android:id="@+id/viewDosage"
+                    style="@style/Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:onClick="calculateValue"
+                    android:text="@string/button1text" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp">
+
+
+                <TextView
+                    android:id="@+id/viewDosagenote"
+                    android:layout_width="260dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center_vertical"
+                    android:text="GFR value using MDRD formula" />
+
+                <Button
+                    android:id="@+id/viewDosage2"
+                    style="@style/Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:onClick="calculateValue1"
+                    android:text="@string/button1text" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp">
+
+
+                <TextView
+                    android:id="@+id/viewDosagenote2"
+                    android:layout_width="260dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center_vertical"
+                    android:text="Dialysis Adequacy" />
+
+                <Button
+                    android:id="@+id/button"
+                    style="@style/Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:onClick="calculateValue2"
+                    android:text="@string/button1text" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    style="@style/notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bottext" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

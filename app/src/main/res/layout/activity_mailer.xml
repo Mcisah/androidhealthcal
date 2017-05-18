@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.developers.sugarsinitiative.musk.Mailer">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/headerText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/headertext"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:textColor="#00838f"/>
+
+            <TextView
+                android:id="@+id/subheaderText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/subheadertext" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp">
+
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/email"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/hcp_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/textView7"
+                    android:layout_alignParentRight="true"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:background="#FFFFFF"
+                    android:padding="5dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp">
+
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/subject"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/hcp_subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/textView8"
+                    android:layout_alignParentRight="true"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:background="#FFFFFF"
+                    android:padding="5dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp">
+
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/message"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/hcp_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="80dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/textView9"
+                    android:layout_alignParentRight="true"
+                    android:ems="10"
+                    android:inputType="textMultiLine"
+                    android:background="#FFFFFF"
+                    android:padding="5dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp">
+
+                <Button
+                    android:id="@+id/sendMail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/send_mail"
+                    android:textColor="#FFFFFF"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="@string/the_details_of_the_patients_results_will_be_mailed_to_the_inputed_health_care_provider_s_email" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
