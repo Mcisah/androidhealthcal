@@ -69,7 +69,7 @@ public class Mailer2 extends AppCompatActivity {
 
                     session = Session.getDefaultInstance(props, new Authenticator() {
                         protected PasswordAuthentication getPasswordAuthentication(){
-                            return new PasswordAuthentication("michaelisahadav@gmail.com", "mcisah991");
+                            return new PasswordAuthentication("example@gmail.com", "password");
                         }
                     });
 
@@ -92,7 +92,7 @@ public class Mailer2 extends AppCompatActivity {
 
             try{
                 Message message = new MimeMessage(session);
-                message.setFrom(new InternetAddress("michaelisahadav@gmail.com"));
+                message.setFrom(new InternetAddress("example@gmail.com"));
                 message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(finalemail));
                 message.setSubject(finalsubject);
                 message.setContent(finalmessage, "text/html; charset=utf-8");
